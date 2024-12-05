@@ -1,5 +1,5 @@
 import { ArrowUpOutlined } from '@ant-design/icons'
-import { Card, Col, Row, Statistic } from 'antd'
+import { Col, Row, Statistic } from 'antd'
 import React from 'react'
 
 export default function Balance() {

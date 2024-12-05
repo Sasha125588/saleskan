@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from './logo/Logo'
 import Navigation from './navigation/Navigation'
 import Profile from './profile/Profile'
-import { Divider } from 'antd';
 
 export default function Header() {
   return (
