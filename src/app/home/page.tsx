@@ -1,3 +1,4 @@
+import Dashboards from '@/components/dashboards/Dashboards'
 import Header from '@/components/header/Header'
 import Overview from '@/components/overview/Overview'
 import Stats from '@/components/stats/Stats'
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Header/>
       <Overview/>
       <Stats/>
+      <Dashboards/>
     </div>
   )
 }
