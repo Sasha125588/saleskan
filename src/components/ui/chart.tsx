@@ -10,6 +10,7 @@ const THEMES = { light: "", dark: ".dark" } as const
 
 export type ChartConfig = {
   [k in string]: {
+    k?: k
     label?: React.ReactNode
     icon?: React.ComponentType
   } & (
@@ -69,11 +70,8 @@ ChartContainer.displayName = "Chart"
 
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(
-    /*eslint no-unused-vars: "error"*/
-    ([_, config]) => {
-      config.theme || config.color
-      _ = _
-    }
+    ([_, config]) =>  config.theme || config.color || _
+    
     
   )
 
